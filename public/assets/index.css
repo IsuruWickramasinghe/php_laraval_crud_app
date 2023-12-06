@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    list-style: none;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+}
+#root{
+    margin: 0;
+    padding: 0;
+    width: 1005;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    background-color: #092635;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    color: white;
+    height: 45px;
+}
+.nav ul{
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    text-decoration: underline;
+}
+.nav ul li:last-child{
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: #005B41;
+}
+
+.user-tbl-wrapper{
+    margin-top: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.user-tbl-wrapper table{
+    width: 100%;
+    padding: 0 22px;
+}
+.user-tbl-wrapper table thead {
+    background-color: #1B4242;
+    text-align: left;
+}
+.user-tbl-wrapper table thead tr th{
+    padding: 8px;
+    color: white;
+}
+.user-tbl-wrapper table tbody tr{
+    background-color: #FAF6F0;
+    color: black;
+}
+.user-tbl-wrapper table tbody tr td:last-child{
+    background-color: white;
+}
+.user-tbl-wrapper table tbody tr:hover{
+    background-color: #F4EAE0;
+}
+.user-tbl-wrapper table tbody tr td{
+}
+.btn{
+    border: none;  
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    padding: 12px 14px;
+    height: 100%;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.btn a{
+    color: white;
+}
+.edit{
+    background-color: #0C356A;
+}
+.delete{
+    background-color: #B31312;
+}
+.update{
+    background-color: #0C356A;
+    width: 100%;
+}
+.create{
+    background-color: #005B41;
+    width: 100%;
+}
+
+.create-emp-form-wrapper,
+.update-emp-form-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 22px;
+}
+.create-emp-form-wrapper form,
+.update-emp-form-wrapper form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 450px;
+}
+.create-emp-form-wrapper form input,
+.update-emp-form-wrapper form input,
+.create-emp-form-wrapper form select,
+.update-emp-form-wrapper form select{
+    padding: 12px 6px;
+}
